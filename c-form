@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Novo Usuário</title>
+        <link rel="stylesheet" href="../css/global.css" />
+        <link rel="stylesheet" href="../css/theme.css" />
+        <link rel="stylesheet" href="../css/form.css" />
+    </head>
+    <body>
+        <main>
+            <h1>Cadastro</h1>
+            <form action="createUser.php" method="post">
+                <div class="input-container">
+                    <p class="label-container">
+                        <label for="username">Nome:</label>
+                        <input
+                            type="text"
+                            name="username"
+                            id="username"
+                            placeholder="nome:"
+                            required
+                        />
+                    </p>
+
+                    <p class="label-container">
+                        <label for="email">Email:</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="email:"
+                            required
+                        />
+                    </p>
+
+                    <p class="label-container">
+                        <label for="age">Idade:</label>
+                        <input
+                            type="age"
+                            name="age"
+                            id="age"
+                            placeholder="idade:"
+                            required
+                        />
+                    </p>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="confirm">Criar Novo Usuário</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
